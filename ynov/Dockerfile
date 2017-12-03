@@ -16,7 +16,7 @@ COPY ./index.html /usr/share/nginx/html/index.html
 COPY ./docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 
-VOLUME ["/usr/share/nginx/html/"]
+VOLUME ["/usr/share/nginx/html"]
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
